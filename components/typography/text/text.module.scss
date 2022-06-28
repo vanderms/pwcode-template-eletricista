@@ -1,0 +1,26 @@
+@use '~/styles/mixins.scss' as *;
+
+.headline {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--darkish-gray);
+
+  @include media(tablet) {
+    font-size: 18px;
+  }
+}
+
+.body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--darkish-gray);
+}
+
+.card {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: var(--darkish-gray);
+}
