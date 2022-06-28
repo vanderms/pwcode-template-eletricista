@@ -1,0 +1,39 @@
+@use '~/styles/mixins.scss' as *;
+
+.headline {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: 0.01em;
+  color: var(--dark);
+
+  @include media(tablet) {
+    font-size: 48px;
+  }
+}
+
+.section {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  color: var(--dark);
+
+  @include media(tablet) {
+    font-size: 24px;
+  }
+
+  @include media(laptop) {
+    font-size: 36px;
+  }
+}
+
+.card {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--dark);
+
+  @include media(tablet) {
+    font-size: 20px;
+  }
+}

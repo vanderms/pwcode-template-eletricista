@@ -1,0 +1,37 @@
+@use './mixins' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+:root {
+  --black: #000;
+  --white: #FFF;
+  --primary: #0C12A6;
+  --primary-light-shade: #D0D0FB;
+  --dark: #020218;
+  --light: #FAFAFF;
+  --darkish-gray: #363649;
+}
