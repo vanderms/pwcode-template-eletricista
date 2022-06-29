@@ -1,0 +1,37 @@
+@use '~/styles/mixins.scss' as *;
+
+.navbar {
+  width: 100%;
+  height: 56px;
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;  
+}
+
+.logo-link {
+  width: 130px;
+  display: grid;
+  place-content: center;  
+}
+
+.sidebar-container {
+  display: none;
+  position: fixed;  
+}
+
+.close-btn{
+  display: grid;
+  place-content: center;
+}
+
+.menu-btn {
+  display: grid;
+  place-content: center;
+}
+
+.backdrop {
+  display: none;
+}
+

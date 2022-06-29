@@ -1,8 +1,7 @@
 @use './mixins' as *;
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
 
-*,
+*,ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 *::after,
 *::before {
   margin: 0;
@@ -20,6 +19,13 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
 
 ul,
 ol {
