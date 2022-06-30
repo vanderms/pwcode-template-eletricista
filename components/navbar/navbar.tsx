@@ -12,6 +12,14 @@ export const Navbar: React.FC = () => {
   const [navbar, setNavbar] = useState<{ position: 'static'|'fixed' }>({ position: 'static' });
   const [sidebar, setSidebar] = useState<{status: 'open'|'closed'}>({ status: 'closed' });
 
+  useEffect(() => {
+    function scrollHandler() {      
+      window.scrollY > 100 ? setNavbar({ position: 'fixed' }) : setNavbar({ position: 'static' });
+    }
+    window.addEventListener('scroll', scrollHandler);
+    return () => window.removeEventListener('scroll', scrollHandler);
+  }, []);
+
   return (
     <nav className={selectors.navbar} data-position={ navbar.position }>
       <Link href='/'>

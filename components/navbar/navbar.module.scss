@@ -4,11 +4,19 @@
   @include padding-container;
   width: 100%;
   height: 56px;
-  margin-top: 22px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: relative;
+  justify-content: space-between; 
+  top: -56px;  
+
+  &[data-position='fixed']{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 997;
+    background: var(--white);
+    transition: top 0.25s;
+  }
 }
 
 .logo-link {
@@ -77,5 +85,4 @@
   width: 100%;
   height: 100vh;
   z-index: 998;
-  
 }
