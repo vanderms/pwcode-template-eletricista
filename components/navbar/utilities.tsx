@@ -2,7 +2,7 @@ import selectors from './navbar.module.scss';
 import Link from 'next/link';
 
 
-interface ListItemLinkProps{
+interface ListItemLinkProps {
   href: string;
   children: React.ReactNode;
 }

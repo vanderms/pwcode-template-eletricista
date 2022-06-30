@@ -1,0 +1,40 @@
+@use '~/styles/mixins' as *;
+
+@mixin button {
+  display: flex;
+  gap: 8px;
+  padding: 16px 24px;  
+  font-size: 15px;
+  line-height: 24px;
+  border-radius: 5px;
+  width: fit-content;
+  text-align: center;
+  font-weight: 600;
+
+  @include media(tablet) {
+    font-size: 15px;
+    padding: 16px 32px;   
+  }
+}
+
+.primary {
+  @include button;
+  color: var(--white);
+  background-color: var(--primary);
+  
+
+  &:hover {
+    background-color: white;
+    outline: 1px solid var(--primary);
+    color: var(--primary);
+  }
+}
+
+.ternary {
+  @include button;  
+  padding: 16px;
+
+  &:hover{  
+    text-decoration: underline;
+  }
+}

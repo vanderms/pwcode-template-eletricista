@@ -1,0 +1,79 @@
+@use '~/styles/mixins.scss' as *;
+
+
+.hero-section {
+  @include padding-container;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 32px;
+
+  @include media(laptop) {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+}
+
+.content {
+  @include media(laptop) {
+    width: 580px;
+  }
+}
+
+.image-mobile-container {
+  border-radius: 3px 3px 3px 16px;
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+
+  @include media(tablet) {
+    border-radius: 3px 3px 3px 32px;
+  }
+
+  @include media(laptop) {
+    display: none;
+  }
+}
+
+.image-desktop-container {
+  display: none;
+  border-radius: 3px 3px 3px 48px;
+  overflow: hidden;
+
+
+  @include media(laptop) {
+    display: grid;
+    place-content: center;
+  }
+}
+
+.text {
+  margin-top: 16px;
+
+  @include media(tablet) {
+    margin-top: 32px;
+  }
+}
+
+.action-links-container {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .ternary-button {
+    color: var(--whatsapp-color);
+
+    path {
+      fill: var(--whatsapp-color);
+    }
+  }
+
+  @include media(tablet) {
+    margin-top: 32px;
+    flex-direction: row;
+    gap: 32px;
+  }
+}

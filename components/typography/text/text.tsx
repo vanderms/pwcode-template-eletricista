@@ -4,8 +4,8 @@ import selectors from './text.module.scss';
 interface TextProps {
   type: 'headline' | 'body' | 'card';
   variant?: string;
-  children: React.ReactNode;
-  className: string;
+  children?: React.ReactNode;
+  className?: string;
 }
 
 export const Text: React.FC<TextProps> = (props) => {
