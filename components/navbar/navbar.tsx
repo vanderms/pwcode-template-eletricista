@@ -22,6 +22,7 @@ export const Navbar: React.FC = () => {
   }, []);
 
   return (
+    <>
     <nav className={selectors.navbar} data-position={ navbar.position }>
       <Link href='/'>
         <a aria-label='homepage' className={selectors['logo-link'] }>
@@ -54,6 +55,8 @@ export const Navbar: React.FC = () => {
         className={selectors["backdrop"]}
         onClick={() => setSidebar({ status: 'closed' })}        
       ></div>
-    </nav>
+      </nav>
+      { navbar.position === 'fixed' && <div className={selectors["placeholder"]}></div>}      
+      </>
   )
 }
