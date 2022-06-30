@@ -3,11 +3,12 @@ import { LinkedinIcon, FacebookIcon, TwitterIcon } from '../icons/icons';
 
 interface SocialMediaLinksProps{
   color: string;
+  className?: string;
 }
 
-export const SocialMediaLinks: React.FC<SocialMediaLinksProps> = ({ color }) => {
+export const SocialMediaLinks: React.FC<SocialMediaLinksProps> = ({ color, className }) => {
   return (
-    <ul className={selectors['social-media-links']}>
+    <ul className={`${selectors['social-media-links']} ${className}`}>
       <li>
         <a href="https://www.linkedin.com" aria-label='linkedin' target="_blank" rel="noopener noreferrer">
           <LinkedinIcon color={color} />

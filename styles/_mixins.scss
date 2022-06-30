@@ -22,3 +22,13 @@ $breakpoints: (
   $html-font-size: 16;
   @return #{math.div($px, $html-font-size)}rem;
 }
+
+@mixin padding-container {
+  padding-inline: 6.4%;
+  @include media(tablet){
+    padding-inline: 8.07%;
+  }
+  @include media(laptop){
+    padding-inline: calc(50vw - 580px);
+  }  
+}
