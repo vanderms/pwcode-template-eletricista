@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Navbar } from 'components/navbar/navbar';
 import { HeroSection } from 'components/sections/hero/hero';
+import { BrandsSection } from 'components/sections/brands/brands';
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +13,8 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
       <main style={{ minHeight: '200vh' }}>
-        <HeroSection/>
+        <HeroSection />
+        <BrandsSection/>
       </main>
 
     </>

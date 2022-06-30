@@ -1,0 +1,37 @@
+@use '~/styles/mixins.scss' as *;
+
+.brands-section {
+  margin-top: 48px;
+  @include padding-container;
+
+  @include media(laptop){
+    margin-top: 64px;
+  }
+}
+
+.section-container {  
+  width: 100%;
+  height: 62px;
+  align-content: center;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 60px 68px 98px;
+  background-color: var(--light);
+
+  @include media(tablet){
+    height: 72px;
+    grid-template-columns: 75px 85px 122px;
+  }
+
+  @include media(laptop){
+    
+    height: 120px;
+    grid-template-columns: 150px 170px 246px;
+  }
+
+  > div {
+    display: grid;
+    place-content: center;
+  }
+}
+
