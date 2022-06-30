@@ -13,8 +13,9 @@ export const Navbar: React.FC = () => {
   const [sidebar, setSidebar] = useState<{status: 'open'|'closed'}>({ status: 'closed' });
 
   useEffect(() => {
-    function scrollHandler() {      
-      window.scrollY > 100 ? setNavbar({ position: 'fixed' }) : setNavbar({ position: 'static' });
+    function scrollHandler() {  
+      if (window.scrollY > 100) setNavbar({ position: 'fixed' });
+      if(window.scrollY === 0) setNavbar({ position: 'static' });     
     }
     window.addEventListener('scroll', scrollHandler);
     return () => window.removeEventListener('scroll', scrollHandler);
