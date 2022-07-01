@@ -1,20 +1,22 @@
 @use '~/styles/mixins' as *;
 
-
-.services-section {  
+.latest-works-section{
   @include padding-container;
   @include section-padding-top;
 }
 
-.service-list{
-  margin-top: 48px;
+.latest-works-list{  
+  margin-top: 64px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
- 
+  gap: 48px;
+
+  @include media(tablet){
+    gap: 64px;
+  }
+
   @include media(laptop){
-    margin-top: 64px;
     flex-direction: row;
-    gap: 36px;
+    gap: 32px;
   }
 }

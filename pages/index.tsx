@@ -4,6 +4,7 @@ import { Navbar } from 'components/navbar/navbar';
 import { HeroSection } from 'components/sections/hero/hero';
 import { BrandsSection } from 'components/sections/brands/brands';
 import { ServicesSection } from 'components/sections/services/services';
+import { LatestWorksSection } from 'components/sections/latest-works/latest-works';
 
 const Home: NextPage = () => {
   return (
@@ -16,9 +17,9 @@ const Home: NextPage = () => {
       <main style={{ marginBottom: '100vh' }}>
         <HeroSection />
         <BrandsSection/>
-        <ServicesSection/>
+        <ServicesSection />
+        <LatestWorksSection/>
       </main>
-
     </>
   )
 }
