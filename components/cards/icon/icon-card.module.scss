@@ -1,0 +1,44 @@
+@use '~/styles/mixins.scss' as *;
+
+
+.service-card{
+  display: grid;
+  grid-template-columns: 1fr;  
+  border-radius: 5px;
+  background-color: var(--light);
+  padding: 24px;
+  max-width: 464px;
+  margin-inline: auto;
+  gap: 24px;
+
+  @include media(tablet){
+    padding: 32px;
+    grid-template-columns: 48px 1fr;
+    align-items: start;
+    gap: 32px;
+  }
+
+  @include media(laptop){
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+.icon-container{
+  width: 48px;
+  display: grid;
+  place-content: center;
+
+  @include media(laptop){
+    width: 60px;
+  }
+}
+
+
+.paragraph-container{
+  margin-top: 24px;
+
+  @include media(tablet){
+    margin-top: 16px;
+  }
+}

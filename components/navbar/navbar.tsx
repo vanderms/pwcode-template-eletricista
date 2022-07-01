@@ -12,6 +12,9 @@ export const Navbar: React.FC = () => {
   const [navbar, setNavbar] = useState<{ position: 'static'|'fixed' }>({ position: 'static' });
   const [sidebar, setSidebar] = useState<{status: 'open'|'closed'}>({ status: 'closed' });
 
+  const closeSidebar = () => setSidebar({ status: 'closed' });
+  const openSidebar = () => setSidebar({ status: 'open' });
+
   useEffect(() => {
     function scrollHandler() {  
       if (window.scrollY > 100) setNavbar({ position: 'fixed' });
@@ -33,27 +36,27 @@ export const Navbar: React.FC = () => {
         <button
           className={selectors['close-btn']}
           aria-label='fechar menu lateral'
-          onClick={() => setSidebar({status: 'closed'})}>
+          onClick={closeSidebar}>
           <CloseIcon color='black'/>
         </button>
         <ul className={selectors["navlink-list"]}>
-          <ListItemLink href='/'>Início</ListItemLink>
-          <ListItemLink href='/#sobre'>Sobre</ListItemLink>
-          <ListItemLink href='/#servicos'>Serviços</ListItemLink>
-          <ListItemLink href='/#depoimentos'>Depoimentos</ListItemLink>
-          <ListItemLink href='/#contato'>Contato</ListItemLink>
+          <ListItemLink href='/' onClick={closeSidebar}>Início</ListItemLink>
+          <ListItemLink href='/#sobre' onClick={closeSidebar}>Sobre</ListItemLink>
+          <ListItemLink href='/#servicos' onClick={closeSidebar}>Serviços</ListItemLink>
+          <ListItemLink href='/#depoimentos' onClick={closeSidebar}>Depoimentos</ListItemLink>
+          <ListItemLink href='/#contato' onClick={closeSidebar}>Contato</ListItemLink>
         </ul>
         <SocialMediaLinks color='black' className={selectors['social-media-links'] } />
       </div>
       <button
         className={selectors['menu-btn']}
         aria-label='abrir menu lateral'
-        onClick={() => setSidebar({ status: 'open' })}>
+        onClick={openSidebar}>
         <HamburgerIcon color='black'/>
       </button>
       <div
         className={selectors["backdrop"]}
-        onClick={() => setSidebar({ status: 'closed' })}        
+        onClick={closeSidebar}        
       ></div>
       </nav>
       { navbar.position === 'fixed' && <div className={selectors["placeholder"]}></div>}      
