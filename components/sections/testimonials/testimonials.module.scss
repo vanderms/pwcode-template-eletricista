@@ -1,0 +1,70 @@
+@use '~/styles/mixins' as *;
+
+.testimonials-section {
+  @include padding-container;
+  @include section-padding-top;
+}
+
+.navegation-frame {
+  margin-top: 60px;
+  width: min(100%, 408px);
+  margin-inline: auto;
+  overflow: hidden;
+
+  @include media(laptop) {
+    width: 100%;
+  }
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: 100% 100% 100%;
+  position: relative;
+  transition: left 1s;
+
+  &[data-shift='1'] {
+    left: 0;
+  }
+
+  &[data-shift='2'] {
+    left: -100%;
+  }
+
+  &[data-shift='3'] {
+    left: -200%;
+  }
+
+  @include media(laptop) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    left: 0 !important;
+  }
+}
+
+.navegation {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  align-items: center;
+
+  @include media(laptop) {
+    display: none;
+  }
+
+  input {
+    appearance: none;
+  }
+
+  label {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--primary-light-shade);
+    cursor: pointer;
+
+    &[data-checked='true'] {
+      background-color: var(--primary);
+    }
+  }
+}

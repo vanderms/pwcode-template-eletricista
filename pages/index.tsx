@@ -5,6 +5,7 @@ import { HeroSection } from 'components/sections/hero/hero';
 import { BrandsSection } from 'components/sections/brands/brands';
 import { ServicesSection } from 'components/sections/services/services';
 import { LatestWorksSection } from 'components/sections/latest-works/latest-works';
+import { TestimonialsSection } from 'components/sections/testimonials/testimonials';
 
 const Home: NextPage = () => {
   return (
@@ -18,7 +19,8 @@ const Home: NextPage = () => {
         <HeroSection />
         <BrandsSection/>
         <ServicesSection />
-        <LatestWorksSection/>
+        <LatestWorksSection />
+       <TestimonialsSection/>
       </main>
     </>
   )
