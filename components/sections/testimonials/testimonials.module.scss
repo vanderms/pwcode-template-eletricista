@@ -22,22 +22,29 @@
   position: relative;
   transition: left 1s;
 
+  @include media(laptop) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+  }
+
   &[data-shift='1'] {
     left: 0;
   }
 
   &[data-shift='2'] {
     left: -100%;
+
+    @include media(laptop) {
+      left: 0;
+    }
   }
 
   &[data-shift='3'] {
     left: -200%;
-  }
 
-  @include media(laptop) {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 32px;
-    left: 0 !important;
+    @include media(laptop) {
+      left: 0;
+    }
   }
 }
 

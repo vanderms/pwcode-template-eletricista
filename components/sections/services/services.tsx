@@ -7,7 +7,7 @@ export const ServicesSection: React.FC = () => {
   return (
     <section className={selectors["services-section"]} id='servicos'>
       <SectionHeader
-        title='O que eu posso fazer por você'
+        title='Serviços'
         subtitle='Serviços prestados com qualidade, pontualidade e um preço imbátivel'
       />
       <ul className={selectors["service-list"]}>

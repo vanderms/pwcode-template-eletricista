@@ -1,0 +1,79 @@
+@use '~/styles/mixins' as *;
+
+.about-section {
+  @include padding-container;
+  @include section-padding-top;
+}
+
+.content {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @include media(laptop){
+    flex-direction: row;
+    gap: 80px;
+    justify-content: flex-start;
+    margin-top: 64px;
+  }
+
+}
+
+.title{
+  @include media(tablet){
+    text-align: center;
+  }
+}
+
+.images-container {
+  width: 100%;
+  display: flex;
+
+  gap: 8px;
+  justify-content: center;
+  position: relative;
+
+  @include media(laptop){
+    width: 543px;
+  }
+
+  .illustration,
+  .me {
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+  }
+
+  .illustration {
+    border-radius: 3px;
+  }
+
+  .me {
+    border-radius: 3px 3px 16px 3px;
+
+    @include media(tablet) {
+      border-radius: 3px 3px 32px 3px;
+    }
+  }
+}
+
+.text-container{
+  @include media-only-tablet{
+    position: relative;
+    z-index: 2;
+    width: min(88%, 542px);
+    margin-inline: auto;
+    background-color: rgb(256, 256, 256, 0.9);
+    padding: 24px;
+    margin-top: -64px;
+    border-radius: 5px;
+  }
+
+  @include media(laptop){
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
