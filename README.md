@@ -16,5 +16,5 @@ Este trabalho faz parte de um projeto maior. Quando eu tiver tempo, pretendo cri
 
 ## Links úteis
 
+behance: <https://www.behance.net/gallery/146686405/Landing-page-Perfil-profissional-Eletricista>
 preview: <https://profound-khapse-169514.netlify.app/>
-
