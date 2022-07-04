@@ -25,7 +25,9 @@ export const ContactSection: React.FC = () => {
         strategy='lazyOnload'
         onLoad={() => setIsLeafletLoaded(true)}
       ></Script>
-      {isLeafletLoaded && <LocationMap/>}      
+      <div className={selectors["map-container"]}>
+        {isLeafletLoaded && <LocationMap/>}      
+      </div>      
     </section>
   )
 }

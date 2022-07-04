@@ -8,7 +8,8 @@ import { LatestWorksSection } from 'components/sections/latest-works/latest-work
 import { TestimonialsSection } from 'components/sections/testimonials/testimonials';
 import { AboutSection } from 'components/sections/about/about';
 import { ContactSection } from 'components/sections/contact/contact';
-import Script from 'next/script';
+import { Footer } from 'components/sections/footer/footer';
+
 
 const Home: NextPage = () => {
   return (
@@ -20,7 +21,7 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
       
-      <main style={{paddingBottom: '100vh'}}>
+      <main>
         <HeroSection />
         <BrandsSection/>
         <ServicesSection />
@@ -28,7 +29,8 @@ const Home: NextPage = () => {
         <TestimonialsSection />
         <AboutSection />
         <ContactSection/>
-      </main>      
+      </main>
+      <Footer/>
     </>
   )
 }

@@ -37,8 +37,6 @@ export const LocationMap: React.FC = () => {
   }, []);
 
   return (
-    <div className={selectors["container"]}>
-      <div className={selectors["map"]} ref={container}  />
-    </div>
+    <div className={selectors["map"]} ref={container}  />   
   )
 }

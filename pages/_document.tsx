@@ -15,9 +15,9 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang="pt-br">
         <Head>       
-          <link rel="icon" type="image/png" href="./ico.png" />
+          <link rel="icon" type="image/png" href="/assets/ico.png" />
            <link
               rel="stylesheet"
               href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
