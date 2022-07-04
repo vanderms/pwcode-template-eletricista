@@ -1,0 +1,17 @@
+@use '~/styles/mixins' as *;
+
+
+.container {
+  position: relative;
+  z-index: 0;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+
+  @include media(laptop) {
+    margin-top: 80px;
+    height: 560px;
+  }
+}
