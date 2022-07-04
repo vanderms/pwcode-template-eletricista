@@ -1,4 +1,4 @@
-import { SectionHeader } from 'components/section-header/section-header';
+import { SectionHeader } from 'components/containers/section-header/section-header';
 import selectors from './latest-works.module.scss';
 import { ThumbnailCard } from 'components/cards/thumbnail/thumbnail-card';
 

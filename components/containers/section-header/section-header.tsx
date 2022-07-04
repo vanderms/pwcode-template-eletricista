@@ -1,6 +1,6 @@
 import selectors from './section-header.module.scss';
-import { Title } from '../typography/title/title';
-import { Text } from '../typography/text/text';
+import { Title } from '../../typography/title/title';
+import { Text } from '../../typography/text/text';
 
 interface SectionHeaderProps {
   title: string;

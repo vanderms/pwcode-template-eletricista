@@ -1,0 +1,19 @@
+@use '~/styles/mixins' as *;
+
+.contact-info {
+  margin-top: 40px;
+  width: min(365px, 100%);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+
+  @include media(tablet) {
+    margin-top: 60px;
+  }
+
+  @include media(laptop) {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
+}

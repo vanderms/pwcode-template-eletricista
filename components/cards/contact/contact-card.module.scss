@@ -1,0 +1,59 @@
+@use '~/styles/mixins' as *;
+
+
+.contact-card.primary {
+  background-color: var(--primary);
+
+  svg path {
+    fill: var(--white);
+  }
+
+  .info {
+    color: var(--white);
+  }
+
+  &:hover {
+    background-color: var(--white);
+    outline: 1px solid var(--primary);
+
+    svg path {
+      fill: var(--primary);
+    }
+
+    .info {
+      color: var(--primary);
+    }
+  }
+}
+
+.contact-card {
+  width: min(365px, 100%);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--light);
+
+  svg {
+    width: 48px;
+    height: 48px;
+
+    path {
+      fill: var(--dark);
+    }
+  }
+}
+
+.info {
+  margin-top: 16px;
+  height: 52px;
+  width: 218px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: var(--dark);
+}

@@ -1,5 +1,5 @@
 import selectors from './social-media-links.module.scss';
-import { LinkedinIcon, FacebookIcon, TwitterIcon } from '../icons/icons';
+import { LinkedinIcon, FacebookIcon, TwitterIcon } from '../../icons/icons';
 
 interface SocialMediaLinksProps{
   color: string;

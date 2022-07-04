@@ -1,5 +1,5 @@
 import selectors from './services.module.scss';
-import { SectionHeader } from "components/section-header/section-header";
+import { SectionHeader } from "components/containers/section-header/section-header";
 import { IconCard } from 'components/cards/icon/icon-card.';
 
 

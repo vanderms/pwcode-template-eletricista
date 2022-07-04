@@ -3,7 +3,7 @@ import selectors from './navbar.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ListItemLink } from './utilities';
-import { SocialMediaLinks } from 'components/social-media-links/social-media-links';
+import { SocialMediaLinks } from 'components/containers/social-media-links/social-media-links';
 import { HamburgerIcon, CloseIcon } from 'components/icons/icons';
 import { useState, useEffect } from 'react';
 

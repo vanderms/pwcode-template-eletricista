@@ -1,12 +1,12 @@
 import { TestimonialsCard } from 'components/cards/testimonials/testimonials-card';
-import { SectionHeader } from 'components/section-header/section-header';
+import { SectionHeader } from 'components/containers/section-header/section-header';
 import selectors from './testimonials.module.scss';
 import { ChangeEvent, useState } from 'react';
 
 
 export const TestimonialsSection: React.FC = () => {
 
-  const [navegation, setNavegation] = useState<{ shown: number }>({ shown: 3 });
+  const [navegation, setNavegation] = useState<{ shown: number }>({ shown: 1 });
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.currentTarget.checked) {

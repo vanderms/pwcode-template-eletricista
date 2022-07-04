@@ -1,0 +1,7 @@
+@use '~/styles/mixins' as *;
+
+.contact-section {
+  @include section-padding-top;
+  @include padding-container;
+}
+
