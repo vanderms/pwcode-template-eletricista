@@ -1,34 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Landing Page | Perfil Profissional Eletricista
 
-## Getting Started
+Trata-se de um template de uma landing page criada para um eletricista.
 
-First, run the development server:
+Este trabalho faz parte de um projeto maior. Quando eu tiver tempo, pretendo criar mais designs de perfis prossionais, pequenos blogs e lojas online para microoempreendores. A ideia é implementar com NextJS e hospedar na Netlify. 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Tecnologias utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Figma
+- NextJs
+- TypeScript
+- StoryBook
+- LeafLet + OpenStreetMap API
+- Whatsapp API
+- SCSS
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Links úteis
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+preview: <https://profound-khapse-169514.netlify.app/>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
